@@ -18,20 +18,8 @@ qbe 是一个轻量级的C语言编译器后端，支持多种架构的代码生
 ```bash
 # 使用CMake构建
 mkdir build && cd build
-cmake ..
+cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=relwithdebinfo ..
 make
-```
-
-## 使用示例
-```bash
-# 编译C代码到汇编
-./qbe input.c -o output.s
-```
-
-## 测试说明
-项目包含大量测试用例，位于test/目录下。可以使用以下命令运行测试：
-```bash
-./test.sh
 ```
 
 ## 贡献指南
